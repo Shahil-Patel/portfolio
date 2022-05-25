@@ -1,0 +1,93 @@
+@import "../../global.scss";
+
+.education{
+    background-color: #FAF0D7;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden; 
+
+    @include mobile{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    h1{
+        overflow-y: hidden; 
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: underline;
+        align-items: center;
+        @include mobile{
+            font-size: 35px;
+            text-align: center;
+            text-align-last: center;
+        }
+    }
+   .schoolHeader{
+    overflow-y: hidden; 
+     padding-left: 15%;
+        font-size: 35px;
+      //  padding-left: 5%;
+        padding-top: 20px;
+        @include mobile{
+            padding-top: 10px;
+          //  padding-left: 5%;
+           // padding-right: 5%;
+            font-size: 22.5px;
+            text-align: center;
+            align-items: center;
+            text-align-last: center;
+        }
+    }
+    .extra{
+      overflow-y: hidden; 
+      padding-left: 15%;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: normal;
+        @include mobile{
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 10px;
+            font-size: 17.5px;
+            align-items: center;
+            text-align: center;
+            text-align-last: center;
+        }
+    }
+    .courseWork{
+      overflow-y: hidden; 
+      padding-left: 17.5%;
+        font-size: 25px;
+        font-weight: normal;
+        padding-top: 10px;
+        @include mobile{
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 17.5px;
+            padding-top: 0;
+            align-items: center;
+            text-align: center;
+            text-align-last: center;
+        }
+    }
+    .extraCoursework{
+      overflow-y: hidden; 
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: normal;
+        padding-left: 20%;
+        width: 65%;
+      //  padding-left: 12.5%;
+        @include mobile{
+            text-align: center;
+            text-align-last:center ;
+            align-items: center;
+             font-size: 17.5px;
+             padding-right: 10%;
+             padding-left: 5%;
+             padding-right: 5%;
+         }
+    }
+ 
+}

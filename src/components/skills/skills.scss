@@ -1,0 +1,69 @@
+@import "../../global.scss";
+
+.skills{
+    background-color: #C2DED1;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    h1{
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: underline;
+        align-items: center;
+        @include mobile{
+            font-size: 35px;
+            text-align: center;
+            text-align-last: center;
+        }
+    }
+    .topHeader{
+      padding-left: 15%;
+      font-size: 35px;
+      padding-top: 25px;
+      @include mobile{
+          padding-top: 10px;
+          font-size: 22.5px;
+          text-align: center;
+          align-items: center;
+          text-align-last: center;
+    }
+  }
+   .header{
+     padding-left: 15%;
+        font-size: 35px;
+      //  padding-left: 5%;
+        padding-top: 15px;
+        @include mobile{
+            padding-top: 10px;
+          //  padding-left: 5%;
+           // padding-right: 5%;
+            font-size: 22.5px;
+            text-align: center;
+            align-items: center;
+            text-align-last: center;
+        }
+    }
+    .skillList{
+        padding-top: 5px;
+        font-size: 24px;
+        font-weight: normal;
+        padding-left: 17.5%;
+        width: 65%;
+      //  padding-left: 12.5%;
+        @include mobile{
+            text-align: center;
+            text-align-last:center ;
+            align-items: center;
+             font-size: 17.5px;
+             padding-right: 10%;
+             padding-left: 5%;
+             padding-right: 5%;
+         }
+    }
+ 
+}
