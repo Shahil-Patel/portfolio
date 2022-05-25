@@ -8,11 +8,12 @@
   position: fixed;
   top: 0;
   z-index: 3;
+  align-items: center;
   transition: all 1s ease;
   overflow-y: hidden; 
 
   .wrapper {
-    padding: 10px 30px;
+    padding: 15px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,7 +23,7 @@
       align-items: center;
 
       .logo {
-        font-size: 40px;
+        font-size: 28px;
         font-weight: 700;
         text-decoration: none;
         color: inherit;
