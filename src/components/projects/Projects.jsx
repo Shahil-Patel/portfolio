@@ -42,6 +42,8 @@ export default function Works() {
     },
   ];
   const text = data[currentSlide].moreDec
+  const img = data[currentSlide].img
+  const link = data[currentSlide].link
   const handleClick = (way) => {
     way === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
@@ -57,6 +59,7 @@ export default function Works() {
       >
         {data.map((d) => (
           <div className="container">
+            
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -64,13 +67,13 @@ export default function Works() {
                     <img src= {d.icon} alt="" />
                   </div>
                   <h2>{d.title}</h2>
-                  <p>{d.desc}</p>
+                  <p className="desc" >{d.desc}</p>
 
                 </div>
               </div>
               <div className="right">
                 <a href={d.link} rel="noopener noreferrer" target="_blank" >
-                    <img src={d.img}  alt="" />
+                    <img src={d.img}  alt="" className="img" />
                     </a>
               </div>
             </div>
@@ -84,6 +87,11 @@ export default function Works() {
         alt=""
         onClick={() => handleClick("left")}
       />
+      <div className="currProject">
+      <a href={link} rel="noopener noreferrer" target="_blank" >
+          <img src={img}  alt="" className="curr" />
+      </a>
+    </div>
       <img
         src={arrow}
         className="arrow right"
