@@ -6,6 +6,12 @@
   flex-direction: column;
   align-items: center;
 
+  .container::-webkit-scrollbar {
+    display: none;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  }
   h1 {
     text-align: left;
     font-size: 50px;
@@ -30,9 +36,6 @@
   }
 
   .container {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
 
     @include mobile{
       width: 100%;
@@ -58,7 +61,13 @@
       width: 90%;
       margin-bottom: 2.5%;
     }
-    .myList{      
+    .myList{  
+      .container::-webkit-scrollbar {
+        display: none;
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      }    
       content: '■';
       font-size: 1.1em; 
     }

@@ -9,7 +9,7 @@ import "./education.scss";
             <h3 className="extra">B.S Computer Science & Statistics • September 2020 - January 2024</h3>
             <h3 className="extra">Cumlative & Major GPA: 4.0/4.0</h3>
             <h3 className="courseWork">Relevant Computer Science Coursework:</h3>
-            <h3 className="extraCoursework">Data Structures, Computer Architecture, Design and Analysis of Algorithms, Software methodology, Principals of Programming Languages, Discrete Structures I/II</h3>
+            <h3 className="extraCoursework">Data Structures, Computer Architecture, Design and Analysis of Algorithms, Software methodology, Principals of Programming Languages, Discrete Structures I/II, Internet Technology</h3>
             <h3 className="courseWork">Relevant Statistics/Mathematics Coursework:</h3>
             <h3 className="extraCoursework">Regression Methods, Intermediate Statistical Analysis, Computing/Graphics in Applied Statistics, Linear Algebra, Calculus I/II/III</h3>
             <br></br>
