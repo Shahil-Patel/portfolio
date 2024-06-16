@@ -6,6 +6,12 @@
   flex-direction: column;
   align-items: center;
 
+  .container::-webkit-scrollbar {
+    display: none;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  }
   h1 {
     text-align: left;
     font-size: 50px;
@@ -30,47 +36,38 @@
   }
 
   .container {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
 
     @include mobile{
       width: 100%;
     }
     .tittle{
       margin-top: 10px;
-      font-size: 40px;
+      font-size: 30px;
       font-weight: bold;
       margin-left: 10%;
       width: 80%;
-      @include mobile{
-        width: 100%;
-        font-size: 20px;
-      }
     }
     .subtitle{
       margin-bottom: 5px;
-      font-size: 24px;
+      font-size: 20px;
       font-style: italic;
       font-weight: lighter;
       width: 80%;
-      @include mobile{
-        width: 100%;
-        font-size: 12px;
-      }
     }
     .body{
       font-weight: lighter;
-      font-size: 22px;
-      padding-left: 2.5%;
+      font-size: 18px;
+      padding-left: 1.5%;
       width: 90%;
       margin-bottom: 2.5%;
-      @include mobile{
-        width: 100%;
-        font-size: 11px;
-      }
     }
-    .myList{      
+    .myList{  
+      .container::-webkit-scrollbar {
+        display: none;
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      }    
       content: '■';
       font-size: 1.1em; 
     }

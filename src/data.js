@@ -54,4 +54,12 @@ export const internList = [
         "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
       info: "Attended various hackathons including HackRU 2022 where my group won Best Google Cloud Project (Athena) as well as won Best Rutgers Hack at HackRU 2023 (RuPlatePal) "
     },
-  ];
+  {
+    id: 2,
+    title: "Undergraduate Student Alliance of Computer Scientists (USACS)",
+    subtitle: "Member • 2020 - Current",
+    img:
+      "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
+    info: "Attended various hackathons including HackRU 2022 where my group won Best Google Cloud Project (Athena)"
+  },
+];
