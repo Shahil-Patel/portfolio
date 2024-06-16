@@ -2,15 +2,20 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./experience.scss";
 import {
+  workList,
   internList,
   researchList,
   clubList,
 } from "../../data";
 
 export default function Experience() {
-  const [selected, setSelected] = useState("intern");
+  const [selected, setSelected] = useState("work");
   const [data, setData] = useState([]);
   const list = [
+    {
+      id: "work",
+      title: "Full Time Work",
+    },
     {
       id: "intern",
       title: "Internships",
@@ -26,6 +31,9 @@ export default function Experience() {
   ];
   useEffect(() => {
     switch (selected) {
+      case "work":
+        setData(workList);
+        break;
       case "intern":
         setData(internList);
         break;

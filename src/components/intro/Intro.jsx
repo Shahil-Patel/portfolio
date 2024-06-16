@@ -12,7 +12,7 @@ export default function Intro() {
       backDelay: 1750,
       backSpeed:60,
 
-      strings: ["Software Engineer", "Data Scientist", "Student @ Rutgers - NB","Transportation AI Researcher"],
+      strings: ["Software Engineer", "Graduate of Rutgers NB", "Application Engineering Team @ Epic Games"],
     });
   }, []);
 
