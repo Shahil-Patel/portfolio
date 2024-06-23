@@ -23,7 +23,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build
-        run: gh-pages -d build
-
-      - name: Build1
-        run: npm run build
+        run: yarn deploy
