@@ -27,10 +27,22 @@ jobs:
         with:
           source: .
           destination: ./_site
-          
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-
+        with:
+            path: ./_site
+            name: github-pages
+            
+      - name: Upload artifact 2
+        uses: Run actions/upload-artifact@v4
+        with:
+            name: github-pages
+            path: /home/runner/work/_temp/artifact.tar
+            retention-days: 1
+            if-no-files-found: error
+            compression-level: 6
+            overwrite: false
   # Deployment job
   deploy:
     environment:
