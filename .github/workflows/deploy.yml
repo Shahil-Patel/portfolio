@@ -33,9 +33,9 @@ jobs:
         with:
             path: ./_site
             name: github-pages
-            
+
       - name: Upload artifact 2
-        uses: Run actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
             name: github-pages
             path: /home/runner/work/_temp/artifact.tar
